@@ -6,7 +6,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 #PROD VERSIE: Kopieer de laatste versie 
 #naar /restservice op het image
-COPY rest02/ /restservice/
+COPY /test/rest02/ /restservice/
 
 #deze restservice luistert op poort 5002
 CMD python3 /restservice/restservice.py
